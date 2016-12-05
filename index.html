@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
     <title>MakerSpace</title>
 
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Own Script -->
+    <script type="text/javascript" src="js/script.js"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -13,163 +22,283 @@
     <!-- CSS files-->
     <link href="css/style.css" type="text/css" rel="stylesheet" />
 
-
-
 </head>
 
 <body>
-    <!-- jQuery -->
-    <script src="../libraries/jQuery/jquery-3.1.1.min.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-
-
-    <header>
-        <h1>NYU MakerSpace</h1>
-        <nav>
-            <a href="#container-home">Home</a>
-            <a href="#container-about">About</a>
-            <a href="#container-equipment">Equipment</a>
-            <a href="#container-spaces">Spaces</a>
-            <a href="#container-events">Events</a>
-            <a href="#container-contact">Contact</a>
-        </nav>
-    </header>
-    <div class="container-mid">
-        <div class="container-home">
-                <video id="intro-video" preload="true" autoplay="autoplay" volume="0" poster="img/intro.png">
-                    <source src="vids/Intro.mp4" type="video/mp4">
-                    <source src="vids/Intro.webm" type="video/webm">
-                    <source src="vids/Intro.ogvv" type="video/ogg">
+    <!-- Body -->
+    <nav class="navbar navbar-NYU navbar-fixed-top">
+        <div class="container-fluid" id="navbar-center">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div><a class="navbar-brand" href="#">NYU <div id="logo-part-1">Maker</div><div id="logo-part-2">Space</div></a></div>
+            </div>
+            <div class="collapse navbar-collapse" id="my-nav">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#equipment">Equipment</a></li>
+                    <li><a href="#spaces">Spaces</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#stream">Live Stream</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Container of the body -->
+    <div class="container-fluid">
+        <div class="row" id="home">
+            <div class="col-xs-12">
+                <video id="intro-video" preload="true" autoplay="autoplay" volume="0" poster="img/whiteIntro.png">
+                    <source src="vids/whiteIntro.mp4" type="video/mp4">
+                    <source src="vids/whiteIntro.webm" type="video/webm">
+                    <source src="vids/whiteIntro.ogvv" type="video/ogg">    
                 </video>
-        </div>
-        
-        
-        
-        <div class="container-about">
-            <div class="container-about-text">
-                <h1> About MakerSpace</h1>
-                <p>The NYU Tandon School of Engineering MakerSpace is a new, collaborative work space and lab on the Brooklyn campus. It highlights new kinds of iterative, interdisciplinary teamwork using cutting-edge tools of rapid prototyping and digitally driven production. The MakerSpace is located on the ground floor of Rogers Hall. </p>
             </div>
-            <div id="tempImageAbout">
-                <p>Picture showing the entrance to the basement of MakerSpace and centering the name of the MachineShop and MakerSpace</p>
-            </div>
-            <img src="" alt="Picture showing the entrance to the basement of MakerSpace and centering the name of the MachineShop and MakerSpace">
         </div>
-        <div class="container-equipment">
-            <h1>Equipment</h1>
-            <div class="container-devices">
-                <a href="">
+        <div class="row" id="about">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-11">
+                        <h1 id="about-header"> About MakerSpace</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-11">
+                        <p id="about-text">The NYU Tandon School of Engineering MakerSpace is a new, collaborative work space and lab on the Brooklyn campus. It highlights new kinds of iterative, interdisciplinary teamwork using cutting-edge tools of rapid prototyping and digitally driven production. The MakerSpace is located on the ground floor of Rogers Hall. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10" id="about-img"><img src="img/about-img-900.jpg"></div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="equipment">
+            <div class="col-xs-12">
+                <h1 id="equipment-header">Equipment</h1>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4" id="device-container">
+
+                <!-- Button -->
+
+                <button type="button" id="device-button" data-toggle="modal" data-target="modal-3d-printer">
+                <div id="icon-container">
+                    <img id="icon-3d-printer" class="svg img-rounded" src="img/icons/3d-printer-printing-letters.svg" alt="3D printers icon">
                     <h3>3D Printers</h3>
-                    <p>Print 3D models with Ultimakers, Mojo, Elite, Fortus and Objet30</p>
-                </a>
-                <a href="">
-                    <h3>Laser Cutters</h3>
-                    <p>Engrave and Cut pieces of materials with 60 Watt and 75 Watt Epilogue laser cutters</p>
-                </a>
-                <a href="">
-                    <h3>CNC machines</h3>
-                    <p>Reshape your solid models with our Othermills</p>
-                </a>
-                <a href="">
-                    <h3>Soldering Stations</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </a>
-                <a href="">
-                    <h3>Oscilloscopes</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </a>
-                <a href="">
-                    <h3>More...</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </a>
-            </div>
+                </div>
+                </button>
 
-        </div>
-        <div class="container-spaces">
-            <h2>Spaces</h2>
-            <div id="spaces-carousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#spaces-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#spaces-carousel" data-slide-to="1"></li>
-                    <li data-target="#spaces-carousel" data-slide-to="2"></li>
-                    <li data-target="#spaces-carousel" data-slide-to="3"></li>
-                    <li data-target="#s" data-slide-to="4"></li>
-                </ol>
+                <!-- Modal -->
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="img/makerspace-general.jpg" alt="MakerSpace Picture">
-                        <div class="carousel-caption">
-                            <h3>MakerSpace</h3>
-                            <p>A place where the future is now</p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <img src="img/EventSpace.jpg" alt="Picture of EventSpace">
-                        <div class="carousel-caption">
-                            <h3>EventSpace</h3>
-                            <p>Pitching the companies of tomorrow</p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <img src="img/Greenhouse.jpg" alt="Picture of the Greenhouse">
-                        <div class="carousel-caption">
-                            <h3>Greenhouse</h3>
-                            <p>Harvesting the ideas for a better world/p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <img src="img/MachineShop.jpg" alt="Picture of the Machineshop">
-                        <div class="carousel-caption">
-                            <h3>Machineshop</h3>
-                            <p>Biulding the next generation machines</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/EE%20area.jpg" alt="Picture of another area of MakerSpace">
-                        <div class="carousel-caption">
-                            <h3>More...</h3>
-                            <p>Meet more spaces at MakerSpace</p>
+                <div class="modal fade" id="modal-3d-printer" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            Pictures of 3D printers
                         </div>
                     </div>
                 </div>
 
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#spaces-carousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#spaces-carousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4" id="device-container">
+                <button type="button" id="device-button" data-toggle="modal" data-target="#modal-laser-cutter">
+                <div id="icon-container">
+                    <img id="icon-laser-cutter" class="svg img-rounded" src="img/icons/laser-machine.svg" alt="Laser Cutter icon">
+                    <h3>Laser Cutters</h3>
+                </div>
+                </button>
+
+                <div class="modal fade" id="modal-laser-cutter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            Pictures of Laser Cutters
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4" id="device-container">
+                <button type="button" id="device-button" data-toggle="modal" data-target="#modal-cnc-machine">
+                <div id="icon-container">
+                    <img id="icon-cnc-machine" class="svg img-rounded" src="img/icons/cnc_machine.svg" alt="CNC Machine icon">
+                    <h3>CNC Machines</h3>
+                </div>
+                </button>
+                <div class="modal fade" id="modal-cnc-machine" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            Pictures of CNC Machines
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4" id="device-container">
+                <button type="button" id="device-button" data-toggle="modal" data-target="#modal-chip">
+                <div id="icon-container">
+                    <img id="icon-chip" class="svg img-rounded" src="img/icons/microchip.svg" alt="Electrical and Computing icon">
+                    <h3>Electrical and Computing</h3>
+                </div>
+                </button>
+                <div class="modal fade" id="modal-chip" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            Pictures of devices by the EE area
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4" id="device-container">
+                <button type="button" id="device-button" data-toggle="modal" data-target="#modal-machine-shop">
+                <div id="icon-container">
+                    <img id="icon-machineshop" class="svg img-rounded" src="img/icons/industrial-robot.svg" alt="MachineShop icon">
+                    <h3>Machine Shop</h3>
+                </div>
+                </button>
+                <div class="modal fade" id="modal-machine-shop" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            Pictures of devices at the Machine Shop
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4" id="device-container">
+                <button type="button" id="device-button" data-toggle="modal" data-target="#modal-laser-cutter">
+                <div id="icon-container">
+                    <img id="icon-more" class="svg img-rounded" src="img/icons/micellaneous.svg" alt="Micellaneous Techonolgies icon">
+                    <h3>More...</h3>
+                </div>
+                </button>
+                <div class="modal fade" id="modal-more" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            Pictures of equipment not yet mentioned
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row" id="spaces">
+            <div class="col-xs-12">
+                <h1 id="spaces-header">
+                    Spaces
+                </h1>
+            </div>
+            <div class="col-xs-12">
+                <div class="container">
+                    <br>
+                    <div id="spaces-carousel" class="carousel slide">
+                        <ol class="carousel-indicators">
+                            <li class="item1 active"></li>
+                            <li class="item2"></li>
+                            <li class="item3"></li>
+                            <li class="item4"></li>
+                            <li class="item5"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/makerspace-general.jpg" alt="Picture of MakerSpace" width="900" height="600">
+                                <div class="carousel-caption">
+                                    <h3>MakerSpace</h3>
+                                    <p>A place where the future is now</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="img/EventSpace.jpg" alt="Picture of EventSpace" width="900" height="600">
+                                <div class="carousel-caption">
+                                    <h3>EventSpace</h3>
+                                    <p>Pitching the companies of tomorrow</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="img/Greenhouse.jpg" alt="Picture of Greenhouse" width="900" height="600">
+                                <div class="carousel-caption">
+                                    <h3>Greenhouse</h3>
+                                    <p>Harvesting the ideas for a better world</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="img/MachineShop.jpg" alt="Picture of MachineShop" width="900" height="600">
+                                <div class="carousel-caption">
+                                    <h3>Machineshop</h3>
+                                    <p>Biulding the next generation machines</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="img/EE%20area.jpg" alt="Picture of the Electrical Engineering area" width="900" height="600">
+                                <div class="carousel-caption">
+                                    <h3>Electrical Engineering area</h3>
+                                    <p>Test circuits and build chips</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#spaces-carousel" role="button">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#spaces-carousel" role="button">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container-events">
-            <a><img src="" alt="Marquee event 1" /></a>
-            <a><img src="" alt="Marquee event 2" /></a>
-            <a><img src="" alt="Marquee event 2" /></a>
+        <div class="row" id="events"></div>
+        <div class="row" id="stream">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+                <button type="button" id="button-live-stream" data-toggle="modal" data-target="#live-stream">\
+                    <h1>Live Stream coming soon!</h1>
+                </button>
+                
+                <div id="live-stream" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/dW1BIid8Osg" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-2"></div>
+
         </div>
-        <div class="container-contact">
-            <h3>
-                General email for any MakerSpace questions
-            </h3>
-            <p>tandon-makerspace@nyu.edu</p>
-            <h3>
-                Manager
-                <br> Victoria Bill
-            </h3>
-            <p>victoria.bill@nyu.edu</p>
+        <div class="row" id="contact"></div>
+        <div class="row" id="credits">
+            <div class="col-xs-6"></div>
+            <div class="col-xs-1">
+                <h1 id="credits-header">Credits</h1>
+            </div>
+            <div class="col-xs-5"></div>
         </div>
     </div>
+
 </body>
 
 </html>

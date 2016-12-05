@@ -1,168 +1,164 @@
-body{
+body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: white;
     font-family: "Open Sans", sans-serif;
 }
 
-header{
-    display: flex;
-    justify-content:flex-start;
-    height: 15%;
-    background-color: #101010;
-    width: 100%;
+#logo-part-1{
+    display: inline;
+    font-family: "Arial Black", Gadget, sans-serif;
 }
 
-header h1{
-    width: 25%; 
-    padding-left: 1%;    
-    font-family: sans-serif, Arial;
-    text-align: center;
-    height: 100%;
+#logo-part-2{
+    display: inline;
+    font-family: "Arial", Gadget, sans-serif;
 }
 
-header nav{
-    width:75%;
+.navbar-NYU {
+    background: #57078E;
+}
+
+#navbar-center{
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    height: 100%;
-    margin: 0;
+    justify-content: center;
 }
-header nav a{
-    text-decoration: none;
+
+.navbar-NYU .navbar-brand {
     color: white;
-    transition-property: background;
-    transition-duration: 0.2s;
-    transition-timing-function: linear;
-    height: 100%;
-    width: 16.6%;
-    text-align: center;
-    padding: 3%;
+    font-size: 30px;
+    height: 100px;
+    line-height: 110%;
 }
 
-header nav a:hover{
-    background-color: #140021;
-    color: white;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-
-
-.container-mid{
+.navbar-NYU .nav li a {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-NYU .nav li a {
+    color: white;
+    height: 100px;
+    font-size: 16px;
 }
 
-.container-home{
-    width:100%;
+.navbar-NYU .nav li a:hover{
+    background-color: #140021;
+    text-decoration: none;   
 }
 
-.container-home video{
-    max-width: 100%;
-    width: auto;
+#home{
+    margin-top: 100px;
+}
+
+#intro-video {
+    width: 100%;
     height: auto;
 }
 
-.container-about{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: white;
-    padding: 11% 0%; 11% 0%;
-}
-
-.container-about .container-about-text{
-    width: 40%;
-    color:dimgray;
-    margin:0;
-}
-.container-about .container-about-text h1{
-    padding: 3% 0%;
-}
-
-.container-about .container-about-text p{
-    padding-top: 5%;
-    line-height: 200%;
-}
-
-.container-about #tempImageAbout{
-    background-color: #57068c;
-    width: 400px;   
-    height: 300px;
-    margin-left: -10%;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.container-about img{
-    display: none;  
-}
-
-.container-equipment{
-    width: 100%;
-}
-
-.container-equipment h1{
-    text-align: center;
-}
-
-.container-equipment .container-devices{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.container-equipment .container-devices a{
-    width: 300px;
-    height: 200px;
-    padding: 1%;
-    margin: 2%;
-    text-align: center;
-    background-color: grey;
-    border-radius: 10%;
-}
-
-
-.container-equipment .container-devices a {
-    text-decoration: none;
+#about, #spaces {
+    padding: 8% 0%;
+    background-color: #8901E1;
     color: white;
 }
-.container-equipment .container-devices a h3{
-    font-weight: bold;
-    font-size: 26px;
-}
 
-.container-equipment .container-devices a p{
+#about-text {
     font-weight: lighter;
     line-height: 200%;
-    padding-top: 4%;
+    padding-top: 10%;
 }
 
-.container-spaces{
-    padding: 2%;
-    background-color: white;
-    color:dimgray;  
+#about-img img{
+    border-radius: 100%;
     width: 100%;
+}
+
+#equipment-header, #spaces-header, #credits-header{
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#device-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: 50px;
 }
 
+#device-button{
+    display: inherit;
+    width: 220px;
+    height:230px;
+    background-color: white;
+    border-color: white;
+    border-radius: 20%;
+    border: 5px solid;
+    border-color: darkgrey;
+}
 
-#tempDiv{
-    width:900px;
+#icon-container{
+    width: inherit;
+    height: inherit;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#icon-container h3{
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.img-rounded{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#device-button:hover{
+    border-color: black;
+}
+
+#spaces {
+    padding: 4% 0%;
+    background-color: #8901E1;
+    color: white;
+}
+
+#spaces-header{
+    padding-bottom: 10px;
+}
+
+#spaces-carousel{
+    width: 900px;
     height: 600px;
-    background-color: darkviolet;
+    margin: auto;
 }
 
+/* center images from carousel*/
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+}
 
+@media only screen and (max-width: 992px){
+    #about-img{
+        margin: 5% 15%;
+    }
+} 
+
+@media only screen and (max-width: 768px){
+    #about-img{
+        margin: 5% 5%;
+    }
+} 
