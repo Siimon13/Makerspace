@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MakerSpace</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- CSS files-->
+    <link href="css/style-guide-style.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="main-title">
+            <h1>
+                NYU MakerSpace Style Guide
+            </h1>
+        </div>
+        <div id="strategy">
+            <h1>
+            Strategy
+            </h1>
+            <div class="container">
+                <p>
+                    As the most recent creation from NYU Tandon school of Engineering, we are aiming to show everything that NYU Makerspace can offer in a visually attractive manner to encourage prospective students, parents and students in general to come to the facility located at Brooklyn.
+                </p>
+                <p>
+                    In order to accomplish this, the website was created using the NYU style guide and incorporates interactive media such as videos and carousels. The website is presented in one page to make it easy for the user to navigate thorugh all the areas that the website has to offer and not miss any detail regarding MakerSpace.
+                </p>
+            </div>
+        </div>
+        <div id="code-convections">
+            <h1> Code Conventions</h1>
+            <div class="container">
+                <h2> Naming Conventions </h2>
+                <p>
+                    When it comes to coding, we prefer to use words-with-dashes. DO NOT write them using Camel case in order to keep the consistency of the code presentation. For example, when inserting an attribute to a link, do it this way:
+                </p>
+                <div class="example">
+                    <p>---Avoid camelCase---</p>
+                    <p> href="this-is-the-correct-way.html" </p>
+                </div>
+                <h2> Attributes </h2>
+                <p>
+                    Include the alt attribute for all images. Since we are targeting a very diverse group of people, we need to make sure that the Screen Readers can work with our websites nicely.
+                </p>
+                <div class="example">
+                    <p> img alt="explain what the image is about" /> </p>
+                </div>
+            </div>
+            <h2> Directory Structure </h2>
+            <div class="container">
+                <p>
+                    The current files for this website are sorted as shown below:
+                </p>
+                <ul id="directory">
+                    <!-- This has to be in a container -->
+                    <li>index.html</li>
+                    <li>style-guide.html</li>
+                    <li>js</li>
+                    <ul>
+                        <li>script.js</li>
+                    </ul>
+                    <li>css</li>
+                    <ul>
+                        <li>style.css</li>
+                    </ul>
+                    <li>img</li>
+                    <ul>
+                        <li>equipment</li>
+                        <ul>
+                            <li>3d-printers</li>
+                            <li>cnc-machines</li>
+                            <li>electrical-and-computing</li>
+                            <li>laser-cutters</li>
+                            <li>MachineShop</li>
+                            <li>More</li>
+                        </ul>
+                        <li>icons</li>
+                        <ul>
+                            <li>3d-printer-printing-letters.svg</li>
+                            <li>cnc_machines.svg</li>
+                            <li>facebook.svg</li>
+                            <li>industrial-robot.svg</li>
+                            <li>instagram.svg</li>
+                            <li>laser-machine.svg</li>
+                            <li>micellaneous.svg</li>
+                            <li>microchip.svg</li>
+                            <li>snapchat.svg</li>
+                        </ul>
+                    </ul>
+                    <li>vids</li>
+                    <ul>
+                        <li>intro.mov</li>
+                        <li>intro.mp4</li>
+                        <li>intro.ogv</li>
+                        <li>intro.webm</li>
+                        <li>whiteIntro.mov</li>
+                        <li>whiteIntro.mp4</li>
+                        <li>whiteIntro.ogv</li>
+                        <li>whiteIntro.webm</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="row" id="typography">
+                <h1>
+                    Typography
+                </h1>
+                <div class="container">
+                    <div id="font">
+                        <h2>
+                            Font
+                        </h2>
+                        <p>
+                            MakerSpace's logo was made using Arial and Arial Black. The rest of the text was done using "Open Sans", sans-serif.
+                        </p>
+                    </div>
+                    <div id="sizes">
+                        <h2>
+                            Sizes
+                        </h2>
+                        <table id="font-sizes">
+                            <tr>
+                                <td>
+                                    <h1>Header 1</h1>
+                                </td>
+                                <td>32px/40px</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>Header 2</h2>
+                                </td>
+                                <td>24px/30px</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Header 3</h3>
+                                </td>
+                                <td>18px/22px</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Header 4</h4>
+                                </td>
+                                <td>16/18px</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Paragraph</p>
+                                </td>
+                                <td>14/16px</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Subtle
+                                        <p>
+                                </td>
+                                <td>12/14px</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <h1>
+                     Buttons
+                </h1>
+            </div>
+
+            <div id="buttons">
+                <div id="navigation-button">
+                    <h2>Navbar</h2>
+                    <a href="#buttons">
+                        <div>Button</div>
+                    </a>
+                </div>
+                <hr>
+                <div id="icon-buttons">
+                    <h2>Icons</h2>
+                    <div id="icon-button">
+                        <a href="#buttons">
+                            <div id="icon-container">
+                                <img id="icon-3d-printer" class="img-rounded" src="img/icons/3d-printer-printing-letters.svg" alt="3D printers icon">
+                            </div>
+                        </a>
+                        <h3>3D Printers</h3>
+
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div id="colors">
+            <h1>Colors</h1>
+            <table>
+                <tr>
+                    <th>Color</th>
+                    <th>Hex</th>
+                    <th>RGB</th>
+                    <th>CMYK</th>
+                </tr>
+                <tr id="white">
+                    <td>White</td>
+                    <td>#ffffff</td>
+                    <td>255, 255, 255</td>
+                    <td>0, 0, 0, 0</td>
+                </tr>
+                <tr id="darkgrey">
+                    <td>Darkgrey</td>
+                    <td>#A9A9A9</td>
+                    <td>169, 169, 169</td>
+                    <td>0,0,0,34</td>
+                </tr>
+                <tr id="black">
+                    <td>Black</td>
+                    <td>#000000</td>
+                    <td>0, 0, 0</td>
+                    <td>0, 0, 0, 100</td>
+                </tr>
+                <tr id="light-purple">
+                    <td>Light Purple</td>
+                    <td>#8901E1</td>
+                    <td>137, 1, 255</td>
+                    <td>39, 100, 0, 12</td>
+                </tr>
+                <tr id="nyu-violet">
+                    <td>NYU Violet</td>
+                    <td>#57078E</td>
+                    <td>87,7,142</td>
+                    <td>39, 95, 0, 44</td>
+                </tr>
+                <tr id="blueberry">
+                    <td>Blueberry</td>
+                    <td>#140021</td>
+                    <td>20,0,33</td>
+                    <td>39, 100, 0, 87</td>
+                </tr>
+
+            </table>
+        </div>
+        <div id="copy">
+            <h1>Copy</h1>
+            <p>
+                The website should count with texts of short length. The messages have to be concise, straightforward and clear.
+            </p>
+            <p>
+                Since this website aims to display more images rather than giving full information of the place (such information is provided in another website), its best to explain things by showing them rather than buying them so avoid text if possible.
+            </p>
+        </div>
+        <div id="images">
+            <h1>Images videos</h1>
+            <p>The images have to be all 900px wide and 600px long in order to keep consistency along the carousels</p>
+            <figure>
+                <img src="img/makerspace-general.jpg" title="Example 1" alt="Type of images that should be used in the website" />
+                <figcaption>
+                    Fig 1. - This type of image is appropriate to use in the website since it shows one of the main parts of the facility. Its clear and makes the viewer wonder what is there downstairs and behind that desk in the back.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/equipment/3d-printers/resized/Elite.jpg" title="Example 2" alt="Type of images that should be used in the website" />
+                <figcaption>
+                    Fig 2. - This type of image is also appropriate to use in the website since it shows an important device from MakerSpace. It is neat and clean. There isn't much decoration in the background.
+                </figcaption>
+            </figure>
+            <div id="video-container">
+                <video id="intro-video" preload="true" autoplay="autoplay" volume="0" loop="true" poster="img/intro.png">
+                    <source src="vids/intro.mp4" type="video/mp4">
+                    <source src="vids/intro.webm" type="video/webm">
+                    <source src="vids/intro.ogvv" type="video/ogg">
+                </video>
+            </div>
+        </div>
+        <div id="layouts-grids">
+            <h1>Layouts and Grids</h1>
+            <p> The website used Bootstrap's framework and grid system. The body is container-fluid to avoid whte margins.</p>
+            <p> The page is divided in sections labeled with colors and titles, and a navbar that keeps track of where the user is. </p>
+            <p> MakerSpace's website uses a mobile-first approach</p>
+            <p> For more information refer to the wireframes.</p>
+        </div>
+        <h5>
+            Nicolas Lopierre Aguirre
+        </h5>
+        <a href="#main-title">Back to the Top</a>
+    </div>
+</body>
+
+</html>
