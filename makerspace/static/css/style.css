@@ -6,6 +6,14 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+.navbar-brand>img{
+    height: 60%;
+    /* margin: auto; */
+    width: auto;
+    position: relative;
+    top: 20%;
+}
+
 #logo-part-1 {
     display: inline;
     font-family: "Arial Black", Gadget, sans-serif;
@@ -25,7 +33,7 @@ body {
 }
 
 .navbar-NYU {
-    background: #57078E;
+    background: #57068C;
 }
 
 .navbar-NYU .navbar-brand {
@@ -47,12 +55,19 @@ body {
     font-size: 16px;
 }
 
+.navbar-NYU > li.navbar-right {
+    color: white;
+    height: 90px;
+    font-size: 16px;
+    float: right !important;
+}
+
 .nav-pills>li.active>a {
     background-color: #140021;
 }
 
 .navbar-NYU .nav li a:hover {
-    background-color: #140021;
+    background-color: #402165;
     text-decoration: none;
 }
 
@@ -67,20 +82,38 @@ body {
 
 #about,
 #spaces {
-    padding: 8% 0%;
+    /* padding: 8% 0%; */
     background-color: #8901E1;
     color: white;
 }
 
-#about-text {
-    font-weight: lighter;
-    line-height: 300%;
-    padding-top: 10%;
+
+@media (min-width: 800px){
+    #about-text{
+	font-weight: lighter;
+	font-size: medium;
+	line-height: 100%;
+	position: relative;
+    /* margin-top: 90%; */
+    }
+}
+
+@media (min-width: 1000px){
+
+    #about-text{
+	/* font-weight: lighter; */
+	/* font-size: medium; */
+	/* line-height: 100%; */
+	/* position: relative; */
+	margin-top: 90%;
+    }
 }
 
 #about-img img {
-    border-radius: 100%;
-    width: 100%;
+    /* border-radius: 100%; */
+    padding: 0% 0%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 #equipment-header,
@@ -133,7 +166,7 @@ body {
 }
 
 #device-button:hover {
-    border-color: black;
+    border-color: #f1c232;
 }
 
 .modal-header h2 {
@@ -342,55 +375,55 @@ body {
 
 @media only screen and (max-width: 992px) {
     #about-img {
-        margin: 5% 15%;
+	margin: 5% 15%;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .navbar-header {
-        display: inline-block;
-        width: 250px;
-        margin-top: 15px;
-        padding: 0px;
-        height: 50px;
+	display: inline-block;
+	width: 250px;
+	margin-top: 15px;
+	padding: 0px;
+	height: 50px;
     }
     .navbar-NYU .navbar-brand {
-        font-size: 24px;
+	font-size: 24px;
     }
     #menu-button {
-        margin-top: 25px;
-        display: inline-block;
+	margin-top: 25px;
+	display: inline-block;
     }
     .navbar-NYU .nav li a {
-        height: 50px;
+	height: 50px;
     }
     #about-header,
     #equipment-header,
     #spaces-header {
-        display: block;
-        font-size: 28px;
+	display: block;
+	font-size: 28px;
     }
     #about-text {
-        font-size: 12px;
+	font-size: 12px;
     }
     #about-img {
-        margin: 5% 5%;
+	margin: 5% 5%;
     }
     #device-container {
-        padding: 25px;
+	padding: 25px;
     }
     #spaces-carousel {
-        width: auto;
+	width: auto;
     }
     .carousel-caption h3 {
-        font-size: 18px;
+	font-size: 18px;
     }
     .carousel-caption p {
-        display: none;
+	display: none;
     }
     #subject,
     #email,
     #name {
-        margin: 5px;
+	margin: 5px;
     }
 }
