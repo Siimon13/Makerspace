@@ -250,49 +250,76 @@ $(document).ready(function () {
 
     /* email Form */
 
-    function submitForm() {
-        $("#submit-btn").disable = true;
-        $("#status").innerHTML = "Please wait...";
-        var formdata = new FormData();
-        formdata.append("name", $("#name").value);
-        formdata.append("email", $("#email").value);
-        formdata.append("subject", $("#subject").value);
-        formdata.append("message", $("#message").value);
-        var ajax = new XMLHttpRequest();
-        ajax.open("POST", "email.php");
-        ajax.onreadystatechange = function () {
-            if (ajax.readyState == 4 && ajax.status == 200) {
-                if (ajax.responseText == "success") {
-                    $("#contact-form").innerHTML = "<h2>" + $("#name").value + ", your message has been sent. Thank you!</h2>";
-                } else {
-                    $("#status").innerHTML = ajax.responseText;
-                    $("#submit-btn").disable = false;
-                }
-            }
-        };
-        ajax.send(formdata);
-    }
+    // function submitForm() {
+    // 	$("#submit-btn").disable = true;
+    // 	$("#status").innerHTML = "Please wait...";
+    // 	var formdata = new FormData();
+    // 	formdata.append("name", $("#name").value);
+    // 	formdata.append("email", $("#email").value);
+    // 	formdata.append("subject", $("#subject").value);
+    // 	formdata.append("message", $("#message").value);
+    // 	console.log(formdata);
+    // 	var ajax = new XMLHttpRequest();
+    // 	ajax.open("POST", "email.php");
+    // 	ajax.onreadystatechange = function () {
+    // 	    if (ajax.readyState == 4 && ajax.status == 200) {
+    // 		if (ajax.responseText == "success") {
+    // 		    $("#contact-form").innerHTML = "<h2>" + $("#name").value + ", your message has been sent. Thank you!</h2>";
+    // 		} else {
+    // 		    $("#status").innerHTML = ajax.responseText;
+    // 		    $("#submit-btn").disable = false;
+    // 		}
+    // 	    }
+    // 	};
+
+    // 	ajax.send(formdata);
+    // }
 
 
 });
+
+function submitForm() {
+    $("#submit-btn").disable = true;
+    $("#status").innerHTML = "Please wait...";
+    var formdata = new FormData();
+    formdata.append("name", $("#name").value);
+    formdata.append("email", $("#email").value);
+    formdata.append("subject", $("#subject").value);
+    formdata.append("message", $("#message").value);
+    console.log(formdata);
+    var ajax = new XMLHttpRequest();
+    ajax.open("POST", "email.php");
+    ajax.onreadystatechange = function () {
+	if (ajax.readyState == 4 && ajax.status == 200) {
+	    if (ajax.responseText == "success") {
+		$("#contact-form").innerHTML = "<h2>" + $("#name").value + ", your message has been sent. Thank you!</h2>";
+	    } else {
+		$("#status").innerHTML = ajax.responseText;
+		$("#submit-btn").disable = false;
+	    }
+	}
+    };
+
+    ajax.send(formdata);
+}
 
 
 
 /*
 
-Special thanks to the writers, authors and owner of the following links
-for their help and guidance:
+ Special thanks to the writers, authors and owner of the following links
+ for their help and guidance:
 
-    https: //stackoverflow.com/questions/11978995/how-to-change-color-of-svg-image-using-css-jquery-svg-image-replacement/11978996#11978996?newreg=e366aae55a674b8eb2c480be4be89981
+ https: //stackoverflow.com/questions/11978995/how-to-change-color-of-svg-image-using-css-jquery-svg-image-replacement/11978996#11978996?newreg=e366aae55a674b8eb2c480be4be89981
 
-    http: //www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_carousel_js&stacked=h
+ http: //www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_carousel_js&stacked=h
 
-    https: //stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal
+ https: //stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal
 
-    https: //www.developphp.com/video/JavaScript/Contact-Form-Web-Application-Tutorial-Ajax-HTML5-PHP
+ https: //www.developphp.com/video/JavaScript/Contact-Form-Web-Application-Tutorial-Ajax-HTML5-PHP
 
-    http: //www.flaticon.com/packs/social-media-logos-2
+ http: //www.flaticon.com/packs/social-media-logos-2
 
-    https: //www.iconfinder.com/icons/1313482/application_chat_logo_photo_snap_snapchat_icon#size=128
+ https: //www.iconfinder.com/icons/1313482/application_chat_logo_photo_snap_snapchat_icon#size=128
 
-*/
+ */

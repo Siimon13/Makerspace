@@ -63,7 +63,7 @@ body {
 }
 
 .nav-pills>li.active>a {
-    background-color: #140021;
+    background-color: #402165;
 }
 
 .navbar-NYU .nav li a:hover {
@@ -87,6 +87,12 @@ body {
     color: white;
 }
 
+.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 @media (min-width: 800px){
     #about-text{
@@ -105,15 +111,18 @@ body {
 	/* font-size: medium; */
 	/* line-height: 100%; */
 	/* position: relative; */
-	margin-top: 90%;
+	margin-top: 80%;
     }
 }
 
 #about-img img {
     /* border-radius: 100%; */
+    marigin: 0% 0%;
     padding: 0% 0%;
+    /* padding-right: 0px; */
     max-height: 100%;
     max-width: 100%;
+    float: right;
 }
 
 #equipment-header,
@@ -122,8 +131,9 @@ body {
 #contact-header,
 #credits-header {
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
     padding-top: 10px;
+    padding-left: 10%;
 }
 
 #device-container {
@@ -216,12 +226,16 @@ body {
 }
 
 #spaces-header {
+    float: left;
+    padding-left:10%;
     padding-bottom: 10px;
 }
 
 #spaces-carousel {
     margin: auto;
-    width: 80%;
+    max-width: 100%;
+    max-height: 100%;
+    float: right;
 }
 
 
@@ -238,10 +252,34 @@ body {
     background-color: #140021;
 }
 
+#event-head {
+    text-align: left;
+    color: white;
+    background-color: #f1c232;
+    line-height: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left:5%;
+/* color: #140021; */
+
+}
+
 #events-header {
     padding-bottom: 20px;
     color: white;
 }
+
+#event-name{
+    padding: 0;
+    marigin: 0;
+}
+
+#event-descp{
+
+}
+
 
 #event-container {
     padding: 10px 0px;
@@ -250,12 +288,13 @@ body {
 #event-img-container {
     text-align: center;
     background-color: white;
-    font-weight: 400;
+    font-weight: 50;
+    line-height: 220px;
     max-height: 300px;
     height: auto;
     height: 300px;
     color: #140021;
-    border-radius: 20px;
+
 }
 
 #stream {
