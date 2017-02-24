@@ -227,13 +227,14 @@ body {
 }
 
 #spaces {
-    padding: 4% 0%;
+    padding: 0% 0%;
     background-color: #8901E1;
     color: white;
 }
 
 #spaces-header {
     float: left;
+    padding-top:20%;
     padding-left:10%;
 /* padding-top:15%; */
 /* padding-bottom: 10px; */
