@@ -94,7 +94,6 @@ body {
     background-color:white;
 }
 
-
 .container-fluid{
     padding-right: 0;
     padding-left: 0;
@@ -104,10 +103,15 @@ body {
 
 @media (min-width: 800px){
     #about-text{
-	font-weight: lighter;
-	font-size: medium;
-	line-height: 100%;
+	color: #4c4c4e;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 24px;
+	/* line-height: 100%; */
 	position: relative;
+	padding: 5%;
+	/* padding-bottom: 150px; */
+	top: -250px;
 	/* margin-top: 90%; */
     }
 }
@@ -150,7 +154,7 @@ body {
 #credits-header {
     margin: auto;
     font-family: "gothambold";
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     padding-top: 5%;
     padding-left: 10%;
