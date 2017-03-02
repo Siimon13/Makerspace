@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'gothambold';
-    src: url("{% static 'css/fonts/gothambold.ttf' %}");
+    /* src: url("{% static 'css/fonts/gothambold.ttf' %}"); */
     src: local("{% static 'css/fonts/gothambold.ttf' %}");
 }
 
