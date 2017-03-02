@@ -1,0 +1,66 @@
+%!Adobe-FontList 1.17
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ArialMT
+FamilyName:Arial
+StyleName:Regular
+FullName:Arial
+MenuName:Arial
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Gabriella\Desktop\MakerSpace Website Update Folder\Document fonts\arial.ttf
+DataFormat:sfntData
+FileLength:915212
+FileModTime:1468665727
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arial
+NameArray:0,Win,1,Arial
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Arial-BoldMT
+FamilyName:Arial
+StyleName:Bold
+FullName:Arial Bold
+MenuName:Arial
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Gabriella\Desktop\MakerSpace Website Update Folder\Document fonts\arialbd.ttf
+DataFormat:sfntData
+FileLength:864892
+FileModTime:1468665727
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arial Bold
+NameArray:0,Win,1,Arial
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:GothamBold
+FamilyName:Gotham Bold
+StyleName:Regular
+FullName:Gotham Bold
+MenuName:Gotham Bold
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Gabriella\Desktop\MakerSpace Website Update Folder\Document fonts\Gotham Bold Regular.ttf
+DataFormat:sfntData
+FileLength:66028
+FileModTime:1485964522
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Gotham Bold
+NameArray:0,Win,1,Gotham Bold
+%EndFont
+

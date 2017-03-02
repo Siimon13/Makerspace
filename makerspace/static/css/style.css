@@ -1,9 +1,15 @@
+@font-face {
+    font-family: 'gothambold';
+    src: url('../fonts/abc.ttf');
+    src: local("{% static 'css/fonts/gothambold.ttf' %}")
+}
+
 body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "gothambold";
 }
 
 .navbar-brand>img{
@@ -14,17 +20,8 @@ body {
     top: 20%;
 }
 
-#logo-part-1 {
-    display: inline;
-    font-family: "Arial Black", Gadget, sans-serif;
-}
-
-#logo-part-2 {
-    display: inline;
-    font-family: "Arial", Gadget, sans-serif;
-}
-
 .navbar-header {
+    height: 70px;
     width: 200px;
 }
 
@@ -59,7 +56,8 @@ body {
     color: white;
     height: 90px;
     font-size: 16px;
-    float: right !important;
+    /* float: right; */
+    padding-right:10%;
 }
 
 .nav-pills>li.active>a {
@@ -80,18 +78,22 @@ body {
     height: auto;
 }
 
-#stream {
-    background-color: #8901E1;
-    padding: 10% 5%;
-
-}
 
 #about,
-#spaces {
+#spaces,
+#live-stream,
+#stream {
     /* padding: 8% 0%; */
-    background-color: #8901E1;
-    color: white;
+    color: purple;
+    background-color: #eeeeee
+    }
+
+#equipment,
+#home,
+#events {
+    background-color:white;
 }
+
 
 .container-fluid{
     padding-right: 0;
@@ -106,7 +108,7 @@ body {
 	font-size: medium;
 	line-height: 100%;
 	position: relative;
-    /* margin-top: 90%; */
+	/* margin-top: 90%; */
     }
 }
 
@@ -131,16 +133,28 @@ body {
     float: right;
 }
 
+
+.header {
+    content:"";
+    display:block;
+    height:70px; /* fixed header height*/
+    margin:-70px 0 0; /* negative fixed header height */
+}
+
 #equipment-header,
 #spaces-header,
 #events-header,
 #contact-header,
 #stream-header,
+#about-header,
 #credits-header {
     margin: auto;
-    /* text-align: center; */
-    padding-top: 10px;
+    font-family: "gothambold";
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 5%;
     padding-left: 10%;
+
 }
 
 #device-container {
@@ -167,6 +181,7 @@ body {
 #icon-container {
     width: inherit;
 }
+
 
 #device-container h3 {
     padding-top: 10px;
@@ -228,16 +243,15 @@ body {
 
 #spaces {
     padding: 0% 0%;
-    background-color: #8901E1;
-    color: white;
+    color: purple;
 }
 
 #spaces-header {
     float: left;
     padding-top:20%;
     padding-left:10%;
-/* padding-top:15%; */
-/* padding-bottom: 10px; */
+    /* padding-top:15%; */
+    /* padding-bottom: 10px; */
 }
 
 #spaces-carousel {
@@ -245,7 +259,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     
-/* float: right; */
+    /* float: right; */
 }
 
 
@@ -265,8 +279,8 @@ img {
 }
 
 #events {
+    padding-top: 70px;
     padding-bottom: 30px;
-    background-color: #140021;
 }
 
 #event-head {
@@ -279,13 +293,13 @@ img {
     left: 0;
     right: 0;
     padding-left:5%;
-/* color: #140021; */
+    /* color: #140021; */
 
 }
 
 #events-header {
     padding-bottom: 20px;
-    color: white;
+    color: purple;
 }
 
 #event-name{
@@ -316,16 +330,21 @@ img {
 
 #live-stream {
     text-align: center;
+    padding: 15% 15%;
 }
 
 #button-live-stream {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: auto;
+    font-size: 28px;
     text-align: center;
     background-color: #f1c232;
     color: white;
-    border-radius: 200px;
+    border-radius: 250px 250px;
+    font-family: "gothambold";
+    font-weight: bold;
+    border: none;
 }
 
 #contact {
@@ -484,3 +503,4 @@ img {
 	margin: 5px;
     }
 }
+
