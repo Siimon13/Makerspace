@@ -102,17 +102,19 @@ body {
     margin-left: auto;
 }
 
-@media (min-width: 800px){
+
+@media (min-width: 320px){
     #about-text{
 	color: #4c4c4e;
 	font-family: Arial;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 26px;
 	/* line-height: 100%; */
 	position: relative;
 	padding: 5%;
+
+	/* top: 100px; */
 	/* padding-bottom: 150px; */
-	top: -250px;
 	/* margin-top: 90%; */
     }
 }
@@ -124,7 +126,8 @@ body {
 	/* font-size: medium; */
 	/* line-height: 100%; */
 	/* position: relative; */
-	margin-top: 80%;
+	font-size: 32px;
+	/* margin-top: 80%; */
     }
 }
 
