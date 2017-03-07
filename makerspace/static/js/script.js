@@ -6,19 +6,55 @@ Javascript for Makerspace's Website
 
 $(document).ready(function () {
 
+    var counter = 0;
+    var spacesTitle = ["MakerSpace", "EventSpace", "GreenHouse", "MachineShop", "Electrical Engineering Area"];
+    
+    var spacesCaption = ["A place where the future is now", "Pitching the companies of tomorrow", "Harvesting the ideas for a better world", "Building the next generation of machines", "Test circuits and build chips"];
+
     // Carousels
 
     // Activate Spaces Carousel
     $("#spaces-carousel").carousel();
 
+    //Performing Event
+    $('#spaces-carousel').bind('slide.bs.carousel', function (e) {
+	counter += 1;
+	// var element = document.getElementById("space-caption-header");
+	// element.innerHTML = "makerSpace";
+
+	// var element1 = document.getElementById("space-caption-caption");
+	// element1.innerHTML = "a place where the future is now";
+	console.log(counter);
+    });
+
+
     // Enable Carousel Indicators
     $(".item1").click(function () {
+	// var element = document.getElementById("space-caption-header");
+	// element.innerHTML = "MakerSpace";
+	// console.log(element);
+
+	// var element1 = document.getElementById("space-caption-caption");
+	// element1.innerHTML = "A place where the future is now";
+	
         $("#spaces-carousel").carousel(0);
     });
     $(".item2").click(function () {
+	// var element = document.getElementById("space-caption-header");
+	// element.innerHTML = "EventSpace";
+
+	// var element1 = document.getElementById("space-caption-caption");
+	// element1.innerHTML = "Pitching the companies of tomorrow";
+
         $("#spaces-carousel").carousel(1);
     });
     $(".item3").click(function () {
+	// var element = document.getElementById("space-caption-header");
+	// element.innerHTML = "GreenHouse";
+
+	// var element1 = document.getElementById("space-caption-caption");
+	// element1.innerHTML = "Harvesting the ideas for a better world";
+
         $("#spaces-carousel").carousel(2);
     });
     $(".item4").click(function () {
