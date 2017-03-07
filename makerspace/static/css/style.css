@@ -462,7 +462,8 @@ img {
 }
 
 #footer {
-    background-color: #140021;
+    /* background-color: #140021; */
+    background-color: white;
     display: flex;
     align-items: flex-end;
 }
@@ -474,7 +475,8 @@ img {
 }
 
 #copyright {
-    color: #bcbcbc;
+    /* color: #bcbcbc; */
+    color: #808284;
     font-size: 18px;
 }
 
