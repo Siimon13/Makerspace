@@ -632,10 +632,12 @@
 	    <div class="row" id="spaces">
 		<div class= "col-md-4">
 		    
-		    <h1 id="spaces-header">
-			Spaces
-		    </h1>
+		    <h1 id="spaces-header"> Spaces </h1>
 
+		    <div id="space-caption">
+			<h3>MakerSpace</h3>
+			<p>A place where the future is now</p>
+		    </div>
 		</div>
 		
 		<div class="col-md-8">
@@ -711,7 +713,7 @@
 	</div>
 
 
-	<div class="container-fluid">
+	<div class="container-fluid" style="height: 600px;">
 	    <div class="row" id="events">
 		
 		<div class="col-md-4">
@@ -723,24 +725,35 @@
 		<div class="col-md-4" id="event-container">
 		    <div class="col-xs-8" id="event-img-container">
 			<div id="event-head"> 
-			    <h3 id ="event-name" >Event Name</h3>
+			    <h3 id ="event-name">Design Thinking</h3>
 
-			    <h5 id="event-descp">Month, Day Time in Event Space</h5>
+			    <h5 id="event-descp">March, 6th 6:30PM in Event Space</h5>
 			</div>
-			<h1>Max Height 300px. Will resize proportionally according to size of screen</h1></div>
+
+			<img style="bottom:0; left:0; position:absolute;" src="{%static 'img/event1.png' %}" ">
+
+		    </div>
 		    <!-- <div class="col-xs-1"></div> -->
 		</div>
+
 		<div class="col-md-4" id="event-container">
-		    <div class="col-xs-1"></div>	
-		    <div class="col-xs-10" id="event-img-container">
-			<h1>Max Height 300px. Will resize proportionally according to size of screen</h1></div>
-		    <div class="col-xs-1"></div>
+		    <div class="col-xs-8" id="event-img-container">
+			<div id="event-head"> 
+			    <h3 id ="event-name">MD5 HoneyBee</h3>
+
+			    <h5 id="event-descp">March, 9th 9:00PM in Event Space</h5>
+			</div>
+			<img src="{%static 'img/event2.jpg' %}" ">
+
+		    </div>
+		    <!-- <div class="col-xs-1"></div> -->
 		</div>
-		<div class="col-md-4" id="event-container">
-		    <div class="col-xs-1"></div>
-		    <div class="col-xs-10" id="event-img-container">
-			<h1>Max Height 300px. Will resize proportionally according to size of screen</h1></div>
-		    <div class="col-xs-1"></div>
+
+		<!-- <div class="col-md-4" id="event-container">
+		     <div class="col-xs-1"></div>
+		     <div class="col-xs-10" id="event-img-container">
+		     <h1>Max Height 300px. Will resize proportionally according to size of screen</h1></div> -->
+		<div class="col-xs-1"></div>
 		</div>
 	    </div>
 	</div>
