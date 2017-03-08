@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'gothambold';
-    /* src: url("{% static 'css/fonts/gothambold.ttf' %}"); */
-    src: local("{% static 'css/fonts/gothambold.ttf' %}");
+    src: url("../fonts/gothambold.ttf");
+
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    font-family: "gothambold";
+    font-family: Arial;
 }
 
 .navbar-brand>img{
@@ -31,7 +31,7 @@ body {
 }
 
 .navbar-NYU {
-    background: #57068C;
+    background: #57068c;
 }
 
 .navbar-NYU .navbar-brand {
@@ -41,6 +41,9 @@ body {
     line-height: 110%;
 }
 
+.navbar-NYU .navbar-brand img{
+    padding-left:20%;
+}
 .navbar-NYU .nav li a {
     display: flex;
     justify-content: center;
@@ -85,14 +88,16 @@ body {
 #live-stream,
 #stream {
     /* padding: 8% 0%; */
-    color: purple;
-    background-color: #eeeeee
-    }
+    color: #57068c;
+    background-color:white;
+}
 
 #equipment,
 #home,
-#events {
-    background-color:white;
+#events,
+#contact{
+    background-color: #eeeeee;
+
 }
 
 .container-fluid{
@@ -157,12 +162,12 @@ body {
 #about-header,
 #credits-header {
     margin: auto;
-    font-family: "gothambold";
+    /* font-family: "gothambold"; */
+    font-family: "gothambold", Arial;
     font-size: 60px;
-    font-weight: bold;
     padding-top: 5%;
     padding-left: 10%;
-
+    color: #57068c;
 }
 
 #device-container {
@@ -251,7 +256,7 @@ body {
 
 #spaces {
     padding: 0% 0%;
-    color: purple;
+    color: #57068c;
 }
 
 
@@ -337,7 +342,7 @@ img {
 
 #events-header {
     padding-bottom: 20px;
-    color: purple;
+    color: #57068c;
 }
 
 #event-name{
@@ -462,8 +467,7 @@ img {
 }
 
 #footer {
-    /* background-color: #140021; */
-    background-color: white;
+    background-color: #4c4c4e;
     display: flex;
     align-items: flex-end;
 }

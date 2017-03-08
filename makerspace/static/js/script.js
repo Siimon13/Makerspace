@@ -18,13 +18,15 @@ $(document).ready(function () {
 
     //Performing Event
     $('#spaces-carousel').bind('slide.bs.carousel', function (e) {
-	counter += 1;
+	
+	// counter += 1;
 	// var element = document.getElementById("space-caption-header");
 	// element.innerHTML = "makerSpace";
 
 	// var element1 = document.getElementById("space-caption-caption");
 	// element1.innerHTML = "a place where the future is now";
-	console.log(counter);
+	currentIndex = $('div.active').index() + 1;
+	console.log(currentIndex);
     });
 
 
